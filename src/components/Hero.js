@@ -45,7 +45,7 @@ function Hero() {
         </div>
       </div>
 
-      { showModal && <Modal handleShowModal={handleShowModal} /> }
+      { (showModal === true) ? <Modal handleShowModal={handleShowModal} /> : ""}
     </section>
     )
 }
